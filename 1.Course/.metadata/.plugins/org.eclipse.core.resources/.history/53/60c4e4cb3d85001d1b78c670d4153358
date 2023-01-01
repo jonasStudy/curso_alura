@@ -1,0 +1,9 @@
+package bytebank_encapsulado;
+
+public class TestaConstrutor {
+	public static void main(String[] args) {
+		Conta conta = new Conta(30, 123);
+		System.out.println("Agencia: " + conta.getAgencia());
+		System.out.println("Numero: " + conta.getNumero());
+	}
+}

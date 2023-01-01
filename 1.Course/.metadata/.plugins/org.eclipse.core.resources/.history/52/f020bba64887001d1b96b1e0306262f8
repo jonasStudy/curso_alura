@@ -1,0 +1,12 @@
+package bytebank_herdado;
+
+public class TestaInterface {
+	public static void main(String[] args) {
+		Gerente gerente = new Gerente();
+		Administrador adm = new Administrador();
+
+		SistemaInterno sistema = new SistemaInterno();
+		sistema.autentica(gerente);
+		sistema.autentica(adm);
+	}
+}

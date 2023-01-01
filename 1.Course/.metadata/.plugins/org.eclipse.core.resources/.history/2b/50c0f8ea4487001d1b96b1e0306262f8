@@ -1,0 +1,8 @@
+package bytebank_herdado;
+
+public class Gerente implements Funcionario {
+	public double getBonificacao() {
+		System.out.println("Bonificacao do Gerente");
+		return super.getSalario();
+	}
+}

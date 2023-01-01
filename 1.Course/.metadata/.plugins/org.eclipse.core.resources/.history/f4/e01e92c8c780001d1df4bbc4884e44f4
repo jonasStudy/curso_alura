@@ -1,0 +1,8 @@
+package loiane_curso_aula19;
+
+public class Arrays {
+	public static void main(String[] args) {
+		System.out.println("Queremos armazenar a temperatura por 1 ano");
+		
+	}
+}

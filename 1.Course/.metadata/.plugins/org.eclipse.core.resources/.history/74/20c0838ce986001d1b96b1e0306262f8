@@ -1,0 +1,12 @@
+package bytebank_herdado;
+
+public class TestaFuncionario {
+	public static void main(String[] args) {
+
+		Funcionario gerente = new Gerente();
+		Funcionario editor = new EditorVideo();
+
+		gerente.getBonificacao();
+		editor.getBonificacao();
+	}
+}

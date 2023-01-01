@@ -1,0 +1,16 @@
+package teste1_instanciaDeTitularCliente;
+
+public class TestaBanco {
+	public static void main(String[] args) {
+
+		Cliente2 jonas = new Cliente2();
+		jonas.nome = "Jonas Borges";
+		jonas.cpf = "111.111.111-11";
+		jonas.profissao = "Programador";
+		
+		Conta2 contaDoJonas = new Conta();
+		contaDoJonas.titular = jonas;
+		
+		System.out.println(contaDoJonas.titular.nome);
+	}
+}

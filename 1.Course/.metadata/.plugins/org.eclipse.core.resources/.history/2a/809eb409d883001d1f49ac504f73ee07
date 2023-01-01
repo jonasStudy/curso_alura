@@ -1,0 +1,10 @@
+package bytebank_composto;
+
+public class TestaContaSemCliente {
+	public static void main(String[] args) {
+		Conta contaDoJonas = new Conta();
+		contaDoJonas.depositar(2000);
+
+		System.out.println(contaDoJonas.titular.nome);
+	}
+}

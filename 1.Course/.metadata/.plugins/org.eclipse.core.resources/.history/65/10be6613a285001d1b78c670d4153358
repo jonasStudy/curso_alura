@@ -1,0 +1,17 @@
+package aula1_testeGerenteDiretor;
+
+public class TestaTipo {
+	public static void main(String[] args) {
+		Funcionario comum = new Funcionario();
+		comum.setSalario(3000);
+		System.out.println("Bonificacao de funcionario comum: " + comum.getBonificacao());
+
+		Funcionario gerente = new Funcionario();
+		gerente.setSalario(4000);
+		System.out.println("Bonificacao de gerente: " + gerente.getBonificacao());
+
+		Funcionario diretor = new Funcionario();
+		diretor.setSalario(6000);
+		System.out.println("Bonificacao de diretor: " + diretor.getBonificacao());
+	}
+}

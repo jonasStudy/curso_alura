@@ -1,0 +1,13 @@
+package bytebank_herdado;
+
+public class TestaReferenciaBonificacao {
+	public static void main(String[] args) {
+		Gerente gerente = new Gerente();
+		gerente.setNome("Jonas Gerente");
+		gerente.setSalario(3000);
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(gerente);
+		System.out.println("Soma bonificacao: " + controle.getSoma());
+	}
+}

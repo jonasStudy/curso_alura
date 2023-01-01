@@ -1,0 +1,17 @@
+package bytebank_herdado_conta;
+
+public class TestaContas {
+	public static void main(String[] args) {
+		ContaCorrente cc = new ContaCorrente(9064, 12345);
+		cc.depositar(1.0);
+
+		ContaPoupanca cp = new ContaPoupanca(9065, 12352);
+		cp.depositar(200.0);
+
+		boolean podeTransferir = (cc.transferir(10.0, cp));
+		System.out.println("Status transferencia: " + podeTransferir);
+		System.out.println("Saldo CC: " + cc.getSaldo());
+		System.out.println("Saldo CP: " + cp.getSaldo());
+
+	}
+}

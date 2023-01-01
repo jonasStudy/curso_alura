@@ -1,0 +1,19 @@
+package loiane_curso_aula19;
+
+public class Arrays {
+	public static void main(String[] args) {
+		System.out.println("Queremos armazenar a temperatura por 1 ano");
+
+		double[] temperaturas = new double[365];
+		temperaturas[0] = 31.3;
+		temperaturas[1] = 31;
+		temperaturas[2] = 23;
+		temperaturas[3] = 32;
+		temperaturas[4] = 34;
+		temperaturas[5] = 31.5;
+
+		System.out.println("A temperatura do dia 3 e: " + temperaturas[2]);
+
+		System.out.println("O tamanho do array e: " + temperaturas.length);
+	}
+}

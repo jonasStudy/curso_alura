@@ -1,0 +1,32 @@
+package loiane_curso_aula19;
+
+public class Arrays {
+	public static void main(String[] args) {
+		System.out.println("Queremos armazenar a temperatura por 1 ano");
+		
+//		Se fossemos escrever manualmente a temperatura para todos os dias do ano ficaria algo como mostrado abaixo:
+		
+//		double tempDia001 = 31.3;
+//		double tempDia002 = 32;
+//		double tempDia003 = 33.7;
+//		double tempDia004 = 34;
+		
+//		Geralmente o array diretamente ligado ao nome da variavel. Porem esta nao seria
+//		uma boa pratica:
+//		double temperaturas[] = new double[365];
+		
+//		A boa pratica seria criar o array no tipo da variavel: 
+		
+		double[] temperaturas = new double[365];
+		temperaturas[0] = 31.3;
+		temperaturas[1] = 31;
+		temperaturas[2] = 23;
+		temperaturas[3] = 32;
+		temperaturas[4] = 34;
+		temperaturas[5] = 31.5;
+				
+		System.out.println("A temperatura do dia 3 e: " + temperaturas[2]);
+		
+		System.out.println("O tamanho do array e: " + temperaturas.length);
+	}
+}

@@ -1,0 +1,15 @@
+package bytebank_composto;
+
+public class TestaContaSemCliente2 {
+	public static void main(String[] args) {
+		Conta contaDoJonas = new Conta();
+
+//		Instancia direta na variavel Conta:
+		contaDoJonas.titular = new Cliente();
+		System.out.println("Memoria: " + contaDoJonas.titular);
+
+//		Objeto nao nulo mais: 
+		contaDoJonas.titular.nome = "Jonas Borges";
+		System.out.println("Titular: " + contaDoJonas.titular.nome);
+	}
+}

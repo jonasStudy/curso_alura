@@ -1,0 +1,9 @@
+package teste1_instanciaDeTitularCliente;
+
+public class TestaConta2 {
+	public static void main(String[] args) {
+		Conta2 conta1 = new Conta2();
+		
+		
+	}
+}

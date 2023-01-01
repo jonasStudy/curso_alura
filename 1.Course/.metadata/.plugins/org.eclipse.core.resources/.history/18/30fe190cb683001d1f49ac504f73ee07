@@ -1,0 +1,29 @@
+package bytebank;
+
+public class CriaConta {
+	public static void main(String[] args) {
+		System.out.println("Testando os Metodos");
+		Conta conta1 = new Conta();
+		Conta conta2 = new Conta();
+
+		conta1.saldo = 500;
+		conta2.saldo = 100;
+
+		System.out.println("Saldo da conta 1: " + conta1.saldo);
+		System.out.println("Saldo da conta 2: " + conta2.saldo);
+
+		conta1.sacar(100);
+		conta1.transferir(100, conta2);
+
+		System.out.println("Saldo atual da conta 1: " + conta1.saldo);
+		System.out.println("Saldo atual da conta 2: " + conta2.saldo + "\r\n");
+
+		System.out.println("Testando o retorno boolean de transferir: ");
+		if (conta1.transferir(300, conta2)) {
+			System.out.println("Transferencia realizada com sucesso!");
+		} else {
+			System.out.println("Saldo insuficiente!");
+		}
+		System.out.println("Saldo da conta 2 : " + conta2.saldo);
+	}
+}

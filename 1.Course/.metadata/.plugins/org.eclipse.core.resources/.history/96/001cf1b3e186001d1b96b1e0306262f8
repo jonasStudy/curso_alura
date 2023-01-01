@@ -1,0 +1,11 @@
+package bytebank_herdado;
+
+public class TestaFuncionario {
+	public static void main(String[] args) {
+		Funcionario funcionario = new Funcionario();
+		funcionario.setNome("Jonas Borges");
+		funcionario.setSalario(2500);
+		System.out.println(funcionario.getNome());
+		System.out.println(funcionario.getBonificacao());
+	}
+}

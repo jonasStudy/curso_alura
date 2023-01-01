@@ -1,0 +1,21 @@
+package bytebank_herdado;
+
+public abstract class Autenticavel {
+
+//	e concreto:
+//	private int senha;
+
+//	e concreto. Metodos abstratos nao tem implementacao 
+//	public void setSenha(int senha) {
+//		this.senha = senha;
+//	}
+
+	public abstract void setSenha(int senhta);
+
+	public boolean autenticar(int senha) {
+		if (this.senha == senha) {
+			return true;
+		}
+		return false;
+	}
+}

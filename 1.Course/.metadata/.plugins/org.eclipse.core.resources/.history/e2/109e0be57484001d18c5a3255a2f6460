@@ -1,0 +1,7 @@
+package bytebank_encapsulado;
+
+public class TestaGetESet {
+	public static void main(String[] args) {
+
+	}
+}

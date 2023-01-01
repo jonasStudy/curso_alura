@@ -1,0 +1,9 @@
+package bytebank_composto;
+
+public class TestaContaSemCliente2 {
+	public static void main(String[] args) {
+		Conta contaDoJonas = new Conta(); 
+		contaDoJonas.titular.nome = "Jonas Borges";
+		System.out.println("Titular: " + contaDoJonas.titular.nome);
+	}
+}

@@ -1,0 +1,8 @@
+package bytebank_herdado;
+
+public class TestaGerente {
+	public static void main(String[] args) {
+		Gerente gerente = new Gerente();
+		
+	}
+}

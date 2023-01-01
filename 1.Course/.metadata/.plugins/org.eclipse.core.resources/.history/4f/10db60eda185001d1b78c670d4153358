@@ -1,0 +1,7 @@
+package aula1_testeGerenteDiretor;
+
+public class TestaTipo {
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,14 @@
+package bytebank_herdado;
+
+public class TestaFuncionario {
+	public static void main(String[] args) {
+		Funcionario gerente = new Gerente();
+		Funcionario editor = new EditorVideo();
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(gerente);
+		controle.registra(editor);
+		
+		System.out.println("Total de bonificacao: " + controle.getSoma());
+	}
+}

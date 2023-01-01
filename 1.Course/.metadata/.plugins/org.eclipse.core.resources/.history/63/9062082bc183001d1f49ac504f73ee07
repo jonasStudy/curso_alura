@@ -1,0 +1,10 @@
+package teste1_instanciaDeTitularCliente;
+
+public class TestaBanco {
+	public static void main(String[] args) {
+		
+		Cliente2 jonas = new Cliente2();
+		
+		
+	}
+}

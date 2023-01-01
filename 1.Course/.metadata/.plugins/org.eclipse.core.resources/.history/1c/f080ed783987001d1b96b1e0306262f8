@@ -1,0 +1,19 @@
+package bytebank_herdado;
+
+public class Cliente implements Autenticavel {
+
+	private int senha;
+
+	@Override
+	public void setSenha(int senhta) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean autenticar(int senha) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

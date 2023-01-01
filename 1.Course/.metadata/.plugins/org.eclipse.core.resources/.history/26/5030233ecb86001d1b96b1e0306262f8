@@ -1,0 +1,8 @@
+package bytebank_herdado_conta;
+
+public class TestaContas {
+	public static void main(String[] args) {
+		ContaCorrente contaCorrente = new ContaCorrente(9064, 12345);
+
+	}
+}

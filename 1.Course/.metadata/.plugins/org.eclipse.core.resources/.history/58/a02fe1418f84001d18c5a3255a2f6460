@@ -1,0 +1,14 @@
+package bytebank_encapsulado;
+
+public class TestaGetESet {
+	public static void main(String[] args) {
+		Conta conta = new Conta(); 
+		conta.setNumero(123);
+		System.out.println("Numero da conta: " + conta.getNumero());
+		
+		Cliente jonas = new Cliente();
+//		conta.titular = jonas;
+		
+		
+	}
+}

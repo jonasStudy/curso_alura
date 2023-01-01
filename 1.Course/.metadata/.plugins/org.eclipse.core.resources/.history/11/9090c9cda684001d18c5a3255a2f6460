@@ -1,0 +1,32 @@
+package bytebank_encapsulado;
+
+public class TestaGetESet {
+	public static void main(String[] args) {
+		Conta contaDoJonas = new Conta();
+		contaDoJonas.setNumero(123);
+		System.out.println("Numero da conta: " + contaDoJonas.getNumero());
+
+		Cliente jonas = new Cliente();
+//		contaDoJonas.titular = jonas;
+		jonas.setNome("Jonas Borges");
+		contaDoJonas.setTitular(jonas);
+		System.out.println(contaDoJonas.getTitular().getNome() + "\r\n");
+
+		System.out.println("Atualizando dados: ");
+		contaDoJonas.getTitular().setProfissao("Programador");
+		contaDoJonas.getTitular().setCpf("131.171.537-13");
+		System.out.println("Profissao: " + contaDoJonas.getTitular().getProfissao());
+		System.out.println("CPF: " + contaDoJonas.getTitular().getCpf());
+
+//		quebrando em duas linhas o codigo acima:
+		Cliente titularDaConta = contaDoJonas.getTitular();
+		titularDaConta.setProfissao("Programador Java");
+		System.out.println("Profissao atualizada: " + contaDoJonas.getTitular().getProfissao());
+		
+//		local na memoria: 
+		System.out.println("Local na memoria: ");
+		System.out.println("getTitular: " + contaDoJonas.getTitular());
+		System.out.println("Cliente: " + jonas + "\r\n");
+		System.out.println("titularDaConta: " + titularDaConta);
+	}
+}
